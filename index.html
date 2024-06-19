@@ -17,7 +17,7 @@
       a {color: #007bff; text-decoration: none;}
       .centered {text-align: center;}
 
-      .viewer {display: block; width: 700px; margin: 0 auto;}
+      .viewer {display: block; width: 700px; max-width:100%; margin: 0 auto;}
       .viewer .inputs-area {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
@@ -37,16 +37,18 @@
       .viewer .debug-area {display: none;}
       .viewer .debug-area > div {display: inline-block;}
 
-      .samples-selector {display: block; width: 1200px; margin: 0 auto;}
+      .samples-selector {display: block; width: 1200px; max-width:100%; margin: 0 auto;}
       .samples-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, 128px);
         grid-column-gap: 20px;
         grid-row-gap: 20px;
-        height: 250px;
-        overflow-y: scroll;
+        /* height: 250px; */
+        /* overflow-y: scroll; */
       }
       .samples-area .img-box img {width:100%; image-rendering: pixelated; cursor: pointer;}
+
+      .hoverlayer {display: none !important;}
     </style>
 </head>
 
